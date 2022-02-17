@@ -3,7 +3,16 @@
     font-weight: bold;
 }
 .main {
-
-    text-align: center;
-    margin-top: 20%;
+    margin-top: 0%;
+}
+.Card {
+  text-align: center;
+  margin: auto;
+  padding: 10%;
+  width: 50%;
+  display: inline-block;
+}
+.imageCard{
+    width: 50%;
+    border-radius: 15px;
 }
