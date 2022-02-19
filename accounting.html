@@ -1,43 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="style/index.css">
+        <title>Accounting</title>
+        <link rel="stylesheet" href="style/accounting.css">
         <link rel="stylesheet" href="style/Layout.css">
     </head>
-    <body>
+    <body onload="myFunction()">
         <nav>
             <div>
-                <img src="vector-fine-blank-notebook-eps.jpg" id="headImg">
                 <a href="index.html">Home</a>
                 <a href="AboutUs.html" class="A2">About Us</a>
             </div>
         </nav>
-        <main onload="myFunction">
+        <main>
             <div class="main">
-                <h1>
-                    ToDo List
-                </h1>
-                <table class="table">
+                <table id="myTable">
                     <tr>
-                        <th class="tableHead">List</th>
-                        <th class="tableHead">Status</th>
-                    </tr>
-                    <tr>
-                        <td>learn JS</td>
-                        <td> <img src="assets/depositphotos_3501278-stock-photo-green-background.jpg" alt=""> </td>
-                    </tr>
-                    <tr>
-                        <td>Create HTML page</td>
-                        <td> <img src="assets/red-background-ready-print-design-260nw-1936279543.jpg" alt=""> </td>
-                    </tr>
-                    <tr>
-                        <td>Walk the dog</td>
-                        <td> <img src="assets/red-background-ready-print-design-260nw-1936279543.jpg" alt=""> </td>
-                    </tr>
-                    <tr>
-                        <td>Watch the match</td>
-                        <td> <img src="assets/red-background-ready-print-design-260nw-1936279543.jpg" alt=""> </td>
+                        <th>Department Name</th>
+                        <th>Number</th>
+                        <th>Average salary</th>
+                        <th>Total salary</th>
                     </tr>
                 </table>
             </div>
@@ -46,6 +28,6 @@
             <p>2022 CopyRight to Omar AL-KaraKi</p>
             
         </footer>
-        <script src="js/app.js"></script>
+        <script src="js/accounting.js"></script>
     </body>
 </html>

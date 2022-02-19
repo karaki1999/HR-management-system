@@ -1,9 +1,11 @@
+var allArr = [];
 var id = 1001;
 var Obj ={
     Name:'',
     Dept:'',
     Level:'',
     Image:''
+
 }
 function Finish ()
 {
@@ -12,18 +14,20 @@ function Finish ()
     department();
     level();
     image();
-   var confrem= valdaiton();
-   if(confrem==='ok')
-   render();
-    console.log(Obj);
+    
+
+    var confrem= valdaiton();
+    if(confrem==='ok')
+    render();
 }
 function render(){
 
 
-  var mainDiv  =document.getElementById('Card');
+
+  var mainDiv = document.getElementById('Card');
   var Image = document.createElement('img');
   var Name = document.createElement('h3');
-  var department=document.createElement('h3');
+  var department = document.createElement('h3');
   var level = document.createElement('h3');
   var Id =document.createElement('h3');
   Image.classList='imageCard'
@@ -33,13 +37,20 @@ function render(){
   level.innerText=Obj.Level
   Id.innerText=id
   mainDiv.appendChild(Image); 
- var newDiv= document.createElement('div');
- newDiv.append(Id);
- newDiv.append(Name);
- newDiv.append(department);
- newDiv.append(level);
- mainDiv.append(newDiv);
-
+  var newDiv= document.createElement('div');
+  newDiv.append(Id);
+  newDiv.append(Name);
+  newDiv.append(department);
+  newDiv.append(level);
+  mainDiv.append(newDiv);
+  Save(Obj);
+}
+function Save(obj)
+{
+    var arr = [];
+    arr = Object.values(obj);
+    allArr.push(arr);
+    localStorage.setItem("emp", JSON.stringify(allArr));
 }
 function valdaiton()
 { 
